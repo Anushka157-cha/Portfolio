@@ -67,34 +67,7 @@ python -m http.server 8000
 # Right-click index.html → Open with Live Server
 ```
 
-Then visit `http://localhost:8000`
-
-## 🌐 Deployment Options
-
-### 1. GitHub Pages (Free & Easy)
-```bash
-git init
-git add .
-git commit -m "Initial portfolio commit"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
-git push -u origin main
-```
-Enable GitHub Pages: Settings → Pages → Select `main` branch → Save
-
-Your site will be live at: `https://YOUR-USERNAME.github.io`
-
-### 2. Vercel (Recommended - Fast CDN)
-1. Visit [vercel.com](https://vercel.com)
-2. Sign up with GitHub
-3. Import your repository
-4. Click Deploy
-5. Get instant HTTPS + global CDN
-
-### 3. Netlify (Easiest - Drag & Drop)
-1. Visit [netlify.com](https://netlify.com)  
-2. Drag and drop your project folder
-3. Instant deployment with HTTPS
+Then visit `http://localhost:8000
 
 ## 📁 Project Structure
 
