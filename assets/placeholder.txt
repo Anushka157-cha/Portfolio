@@ -1,0 +1,18 @@
+This folder is for your portfolio assets:
+
+📁 Recommended Assets to Add:
+- og-image.jpg (1200x630px) - For social media previews
+- favicon.ico - Browser tab icon
+- logo.png - Your personal logo
+- profile-photo.jpg - Your professional headshot
+- project-screenshots/ - Folder with your project images
+- resume.pdf - Your downloadable resume
+
+🎨 Image Optimization Tips:
+- Use WebP format for web images
+- Compress images using TinyPNG or similar tools
+- Recommended project image size: 800x600px
+- Recommended hero image size: 1920x1080px
+
+Current Status: Using Unsplash placeholder images
+Action: Replace with your own images for production use

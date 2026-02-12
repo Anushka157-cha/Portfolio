@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Award-winning portfolio of a creative developer and AI engineer - Showcasing innovative projects with cutting-edge technology">
+    <meta name="keywords" content="portfolio, developer, AI engineer, web developer, creative developer, UI/UX designer">
+    <meta name="author" content="Anushka Chaudhary">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anushka Chaudhary - FullStack Developer & AI Engineer">
+    <meta property="og:description" content="Award-winning portfolio showcasing innovative digital experiences">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    
+    <title>Anushka Chaudhary - FullStack Developer & AI Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <parameter name="cursor-follower"></div>
+    
+    <!-- Background Effects -->
+    <div class="bg-gradient"></div>
+    <canvas id="particles"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text"></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="word">Hi,</span>
+                        <span class="word">I'm</span>
+                    </span>
+                    <span class="title-line hero-name">
+                        <span class="word gradient-text">Anushka</span>
+                        <span class="word gradient-text">Chaudhary</span>
+                    </span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    <strong>FullStack Developer & AI/ML Engineer</strong> | Crafting intelligent, scalable web applications and machine learning solutions. Passionate about competing at national hackathons and transforming complex problems into elegant, innovative code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary magnetic-btn">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-btn">
+                        <span>Get In Touch</span>
+                    </a>
+                     <a href="./resume.pdf" download="Anushka_Chaudhary_Resume.pdf" class="btn btn-secondary magnetic-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">
+                About Me
+            </h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm <strong>Anushka Chaudhary</strong>, a dedicated <strong>FullStack Developer</strong> and <strong>AI/ML Engineer</strong> 
+                        with a passion for building innovative, intelligent web applications. I specialize in creating 
+                        end-to-end solutions that seamlessly integrate cutting-edge AI/ML technologies with robust, 
+                        scalable full-stack architectures.
+                    </p>
+                    <p class="about-paragraph">
+                        My expertise spans across modern web frameworks like <strong>React, Node.js, and Next.js</strong>, 
+                        combined with deep knowledge in <strong>Machine Learning, Deep Learning, and Natural Language Processing</strong>. 
+                        I'm actively competing at national-level hackathons, where I've honed my skills in rapid prototyping, 
+                        problem-solving, and building impactful solutions under pressure.
+                    </p>
+                    <p class="about-paragraph">
+                        With hands-on experience in <strong>Python, TensorFlow, PyTorch, MongoDB, and cloud technologies</strong>, 
+                        I bring ideas to life through clean code, intelligent algorithms, and exceptional user experiences. 
+                        I'm constantly exploring emerging technologies in AI/ML and web development to stay at the forefront of innovation.
+                    </p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="15">20+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+        
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="5">5+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="2">2+</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                Skills & Expertise
+            </h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React / Next.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS / Tailwind</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-title">AI & Machine Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python / PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP / LLMs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Backend & Cloud</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js / Express</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS / Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="83"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker / K8s</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="skill-title">Design & UX</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Figma / Adobe XD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Animation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-card tilt-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80" alt="FarmConnect">
+                        <div class="project-overlay">
+                            <button class="btn btn-icon" onclick="openProjectModal(0)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://farmconnect-alpha.vercel.app/" class="btn btn-icon" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                        <h3 class="project-title">FarmConnect</h3>
+                        <p class="project-description">
+                            A farmer-to-consumer web platform connecting local farmers directly with customers, 
+                            eliminating middlemen and ensuring fresh, affordable produce with multilingual support.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="project-card glass-card tilt-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Internal Developer Platform">
+                        <div class="project-overlay">
+                            <button class="btn btn-icon" onclick="openProjectModal(1)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://frontend-eight-lilac-25.vercel.app" class="btn btn-icon" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">RBAC</span>
+                        </div>
+                        <h3 class="project-title">Internal Developer Platform</h3>
+                        <p class="project-description">
+                            Built a scalable Internal Developer Platform to manage microservices, deployments, feature flags, and observability in one place. The platform features a responsive React dashboard, a modular backend, and secure RBAC-based authentication to streamline internal developer operations and visibility across environments.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="project-card glass-card tilt-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80" alt="EduGame Platform">
+                        <div class="project-overlay">
+                            <button class="btn btn-icon" onclick="openProjectModal(2)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://edugames-a2087.web.app/login" class="btn btn-icon" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Firestore</span>
+                        </div>
+                        <h3 class="project-title">EduGame Platform</h3>
+                        <p class="project-description">
+                            Interactive educational gaming platform designed to enhance learning through 
+                            gamification, featuring leaderboards, user profiles, and modern animations.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                Experience & Education
+            </h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">FullStack Intern</h3>
+                            <span class="timeline-company">Eachiever</span>
+                        </div>
+                        <span class="timeline-date">2024 - 2025</span>
+                        <p class="timeline-description">
+                            Developed and maintained full-stack web applications using modern technologies. 
+                            Collaborated with cross-functional teams to deliver high-quality solutions. 
+                            Implemented responsive designs and optimized application performance.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Hackathon Finalist</h3>
+                            <span class="timeline-company">IIT Bombay</span>
+                        </div>
+                        <span class="timeline-date">2024</span>
+                        <p class="timeline-description">
+                            Selected as finalist in IIT Bombay's national-level hackathon among hundreds 
+                            of participants. Developed innovative solutions leveraging cutting-edge 
+                            technologies and demonstrated strong problem-solving abilities.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Innovation</span>
+                            <span class="tag">Team Work</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Hackathon Finalist</h3>
+                            <span class="timeline-company">HackWithUttarPradesh</span>
+                        </div>
+                        <span class="timeline-date">2024</span>
+                        <p class="timeline-description">
+                            Achieved finalist position in HackWithUttarPradesh, a state-level hackathon 
+                            competition. Built impactful tech solutions addressing real-world challenges 
+                            and showcased technical expertise in competitive environment.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Hackathon</span>
+                            <span class="tag">Innovation</span>
+                            <span class="tag">Tech Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                Get In Touch
+            </h2>
+            
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3 class="contact-heading">Let's Create Something Amazing</h3>
+                    <p class="contact-description">
+                        I'm currently available for freelance work and exciting opportunities. 
+                        Whether you have a project in mind or just want to chat about technology, 
+                        feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:chaudharyanushka085@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            chaudharyanushka085@gmail.com
+                        </a>
+                        <a href="tel:+916386530281" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            +91 6386530281
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Prayagraj
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Anushka157-cha" class="social-link magnetic-btn" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anushka-chaudhary-2b371b316/" class="social-link magnetic-btn" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-link magnetic-btn" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-card" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary magnetic-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Designed & Built by <span class="gradient-text">Anushka Chaudhary</span>
+            </p>
+            <p class="footer-text">
+                © 2026 All rights reserved
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-overlay" onclick="closeProjectModal()"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" onclick="closeProjectModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

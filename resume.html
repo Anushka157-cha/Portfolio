@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Resume — Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .resume-container{max-width:900px;margin:48px auto;padding:24px;text-align:center}
+        .resume-photo{width:220px;height:220px;object-fit:cover;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.15)}
+        .resume-actions{margin-top:20px}
+        .btn-download{display:inline-block;padding:12px 20px;background:#0ea5a4;color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+        .note{margin-top:16px;color:#666;font-size:0.95rem}
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>Download Resume</h1>
+        <p>Click the button to download my resume. If the file doesn't download, follow the instructions below.</p>
+
+        <!-- Profile photo: place your photo at assets/Anu_photo.jpg -->
+        <img src="assets/Anu_photo.jpg" alt="Profile photo" class="resume-photo">
+
+        <div class="resume-actions">
+            <!-- Primary download link (project-local). Put your PDF at assets/Anu_resume.pdf -->
+            <a class="btn-download" href="assets/Anu_resume.pdf" download>Download Resume (local)</a>
+            <!-- Fallback to the Downloads path the user provided (may require file:// access) -->
+            <div style="margin-top:10px">
+                <a href="file:///C:/Users/Anushka/Downloads/Anu_resume%20(4).pdf" class="note" target="_blank">Open resume from Downloads (fallback)</a>
+            </div>
+        </div>
+
+        <p class="note">If the download doesn't work, please copy your resume PDF to <strong>assets/Anu_resume.pdf</strong> and your photo to <strong>assets/Anu_photo.jpg</strong> in this project folder.</p>
+
+        <p class="note">After copying the files, refresh this page to see your photo and download the PDF.</p>
+
+        <p style="margin-top:28px"><a href="index.html">Back to portfolio</a></p>
+    </div>
+</body>
+</html>
